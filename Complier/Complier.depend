@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1483218784 source:c:\users\henry\desktop\ct\hw4\c_tzx\complier\main.cpp
+	<stdio.h>
+	<ctype.h>
+	<cstring>
+	<iostream>
+	<string>
+	<fstream>
+	<queue>
+	<vector>
+	<map>
+	<algorithm>
+	"tool.h"
+
+1483217820 c:\users\henry\desktop\ct\hw4\c_tzx\complier\tool.h
+	<sstream>
+

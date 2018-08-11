@@ -1,0 +1,400 @@
+.data
+a: .space 40
+.str0: .asciiz " "
+.text
+lui $s7 0x1001
+j main
+quicksort: 
+lw $s1 -0($sp)
+sw $s1 -24($sp)
+addi $s1 $s7 0
+lw $s2 -24($sp)
+mul $s2 $s2 4
+addi $s3 $sp -28
+add $s1 $s1 $s2
+lw $s1 0($s1)
+sw $s1 0($s3)
+lw $s1 -28($sp)
+sw $s1 -16($sp)
+lw $s1 -0($sp)
+sw $s1 -32($sp)
+lw $s1 -32($sp)
+sw $s1 -8($sp)
+lw $s1 -4($sp)
+sw $s1 -36($sp)
+li $s1 1
+sw $s1 -40($sp)
+lw $s1 -36($sp)
+lw $s2 -40($sp)
+sub $s3 $s1 $s2
+sw $s3 -36($sp)
+lw $s1 -36($sp)
+sw $s1 -12($sp)
+lw $s1 -4($sp)
+sw $s1 -44($sp)
+lw $s1 -0($sp)
+sw $s1 -48($sp)
+lw $s1 -44($sp)
+lw $s2 -48($sp)
+sub $s3 $s1 $s2
+sw $s3 -44($sp)
+lw $s1 -44($sp)
+sw $s1 -52($sp)
+li $s1 1
+sw $s1 -56($sp)
+lw $s1 -52($sp)
+lw $s2 -56($sp)
+ble $s1 $s2 .label0
+lw $s1 -8($sp)
+sw $s1 -60($sp)
+lw $s1 -60($sp)
+sw $s1 -20($sp)
+.label1:
+lw $s1 -8($sp)
+sw $s1 -64($sp)
+lw $s1 -12($sp)
+sw $s1 -68($sp)
+lw $s1 -64($sp)
+lw $s2 -68($sp)
+bge $s1 $s2 .label2
+.label3:
+lw $s1 -12($sp)
+sw $s1 -72($sp)
+lw $s1 -8($sp)
+sw $s1 -76($sp)
+lw $s1 -72($sp)
+lw $s2 -76($sp)
+ble $s1 $s2 .label4
+lw $s1 -12($sp)
+sw $s1 -80($sp)
+addi $s1 $s7 0
+lw $s2 -80($sp)
+mul $s2 $s2 4
+addi $s3 $sp -84
+add $s1 $s1 $s2
+lw $s1 0($s1)
+sw $s1 0($s3)
+lw $s1 -84($sp)
+sw $s1 -88($sp)
+lw $s1 -16($sp)
+sw $s1 -92($sp)
+lw $s1 -88($sp)
+lw $s2 -92($sp)
+bge $s1 $s2 .label5
+lw $s1 -8($sp)
+sw $s1 -96($sp)
+lw $s1 -12($sp)
+sw $s1 -100($sp)
+addi $s1 $s7 0
+lw $s2 -100($sp)
+mul $s2 $s2 4
+addi $s3 $sp -104
+add $s1 $s1 $s2
+lw $s1 0($s1)
+sw $s1 0($s3)
+lw $s1 -104($sp)
+sw $s1 -108($sp)
+addi $s1 $s7 0
+lw $s2 -96($sp)
+mul $s2 $s2 4
+lw $s3 -108($sp)
+add $s1 $s1 $s2
+sw $s3 0($s1)
+lw $s1 -8($sp)
+sw $s1 -112($sp)
+li $s1 1
+sw $s1 -116($sp)
+lw $s1 -112($sp)
+lw $s2 -116($sp)
+add $s3 $s1 $s2
+sw $s3 -112($sp)
+lw $s1 -112($sp)
+sw $s1 -8($sp)
+lw $s1 -12($sp)
+sw $s1 -120($sp)
+lw $s1 -120($sp)
+sw $s1 -20($sp)
+lw $s1 -12($sp)
+sw $s1 -124($sp)
+li $s1 20
+sw $s1 -128($sp)
+lw $s1 -124($sp)
+lw $s2 -128($sp)
+sub $s3 $s1 $s2
+sw $s3 -124($sp)
+lw $s1 -124($sp)
+sw $s1 -12($sp)
+.label5:
+lw $s1 -12($sp)
+sw $s1 -132($sp)
+li $s1 1
+sw $s1 -136($sp)
+lw $s1 -132($sp)
+lw $s2 -136($sp)
+sub $s3 $s1 $s2
+sw $s3 -132($sp)
+lw $s1 -132($sp)
+sw $s1 -12($sp)
+lw $s1 -12($sp)
+sw $s1 -140($sp)
+li $s1 0
+sw $s1 -144($sp)
+lw $s1 -140($sp)
+lw $s2 -144($sp)
+blt $s1 $s2 .label6
+lw $s1 -12($sp)
+sw $s1 -148($sp)
+lw $s1 -148($sp)
+sw $s1 -20($sp)
+.label6:
+j .label3
+.label4:
+lw $s1 -20($sp)
+sw $s1 -152($sp)
+lw $s1 -152($sp)
+sw $s1 -12($sp)
+.label7:
+lw $s1 -8($sp)
+sw $s1 -156($sp)
+lw $s1 -12($sp)
+sw $s1 -160($sp)
+lw $s1 -156($sp)
+lw $s2 -160($sp)
+bge $s1 $s2 .label8
+lw $s1 -8($sp)
+sw $s1 -164($sp)
+addi $s1 $s7 0
+lw $s2 -164($sp)
+mul $s2 $s2 4
+addi $s3 $sp -168
+add $s1 $s1 $s2
+lw $s1 0($s1)
+sw $s1 0($s3)
+lw $s1 -168($sp)
+sw $s1 -172($sp)
+lw $s1 -16($sp)
+sw $s1 -176($sp)
+lw $s1 -172($sp)
+lw $s2 -176($sp)
+ble $s1 $s2 .label9
+lw $s1 -12($sp)
+sw $s1 -180($sp)
+lw $s1 -8($sp)
+sw $s1 -184($sp)
+addi $s1 $s7 0
+lw $s2 -184($sp)
+mul $s2 $s2 4
+addi $s3 $sp -188
+add $s1 $s1 $s2
+lw $s1 0($s1)
+sw $s1 0($s3)
+lw $s1 -188($sp)
+sw $s1 -192($sp)
+addi $s1 $s7 0
+lw $s2 -180($sp)
+mul $s2 $s2 4
+lw $s3 -192($sp)
+add $s1 $s1 $s2
+sw $s3 0($s1)
+lw $s1 -8($sp)
+sw $s1 -196($sp)
+lw $s1 -196($sp)
+sw $s1 -20($sp)
+lw $s1 -8($sp)
+sw $s1 -200($sp)
+li $s1 20
+sw $s1 -204($sp)
+lw $s1 -200($sp)
+lw $s2 -204($sp)
+add $s3 $s1 $s2
+sw $s3 -200($sp)
+lw $s1 -200($sp)
+sw $s1 -8($sp)
+.label9:
+lw $s1 -8($sp)
+sw $s1 -208($sp)
+li $s1 1
+sw $s1 -212($sp)
+lw $s1 -208($sp)
+lw $s2 -212($sp)
+add $s3 $s1 $s2
+sw $s3 -208($sp)
+lw $s1 -208($sp)
+sw $s1 -8($sp)
+lw $s1 -8($sp)
+sw $s1 -216($sp)
+li $s1 10
+sw $s1 -220($sp)
+lw $s1 -216($sp)
+lw $s2 -220($sp)
+bge $s1 $s2 .label10
+lw $s1 -8($sp)
+sw $s1 -224($sp)
+lw $s1 -224($sp)
+sw $s1 -20($sp)
+.label10:
+j .label7
+.label8:
+lw $s1 -20($sp)
+sw $s1 -228($sp)
+lw $s1 -228($sp)
+sw $s1 -8($sp)
+j .label1
+.label2:
+lw $s1 -8($sp)
+sw $s1 -232($sp)
+lw $s1 -16($sp)
+sw $s1 -236($sp)
+addi $s1 $s7 0
+lw $s2 -232($sp)
+mul $s2 $s2 4
+lw $s3 -236($sp)
+add $s1 $s1 $s2
+sw $s3 0($s1)
+lw $s1 -0($sp)
+sw $s1 -240($sp)
+lw $s1 -8($sp)
+sw $s1 -244($sp)
+lw $s1 -240($sp)
+addi $s2 $sp -252
+sw $s1 0($s2)
+lw $s1 -244($sp)
+addi $s2 $sp -256
+sw $s1 0($s2)
+addi $sp $sp -248
+sw $ra 0($sp)
+addi $sp $sp -4
+jal quicksort
+addi $sp $sp 4
+lw $ra 0($sp)
+addi $sp $sp 248
+lw $s1 -8($sp)
+sw $s1 -248($sp)
+li $s1 1
+sw $s1 -252($sp)
+lw $s1 -248($sp)
+lw $s2 -252($sp)
+add $s3 $s1 $s2
+sw $s3 -248($sp)
+lw $s1 -248($sp)
+sw $s1 -256($sp)
+lw $s1 -4($sp)
+sw $s1 -260($sp)
+lw $s1 -256($sp)
+addi $s2 $sp -268
+sw $s1 0($s2)
+lw $s1 -260($sp)
+addi $s2 $sp -272
+sw $s1 0($s2)
+addi $sp $sp -264
+sw $ra 0($sp)
+addi $sp $sp -4
+jal quicksort
+addi $sp $sp 4
+lw $ra 0($sp)
+addi $sp $sp 264
+.label0:
+jr $ra
+jr $ra
+tzx: 
+main:
+li $s1 0
+sw $s1 -12($sp)
+lw $s1 -12($sp)
+sw $s1 -0($sp)
+.label11:
+lw $s1 -0($sp)
+sw $s1 -16($sp)
+li $s1 10
+sw $s1 -20($sp)
+lw $s1 -16($sp)
+lw $s2 -20($sp)
+bge $s1 $s2 .label12
+li $v0 5
+syscall
+sw $v0 -8($sp)
+lw $s1 -0($sp)
+sw $s1 -24($sp)
+lw $s1 -8($sp)
+sw $s1 -28($sp)
+addi $s1 $s7 0
+lw $s2 -24($sp)
+mul $s2 $s2 4
+lw $s3 -28($sp)
+add $s1 $s1 $s2
+sw $s3 0($s1)
+lw $s1 -0($sp)
+sw $s1 -32($sp)
+li $s1 1
+sw $s1 -36($sp)
+lw $s1 -32($sp)
+lw $s2 -36($sp)
+add $s3 $s1 $s2
+sw $s3 -32($sp)
+lw $s1 -32($sp)
+sw $s1 -0($sp)
+j .label11
+.label12:
+li $s1 0
+sw $s1 -40($sp)
+lw $s1 -40($sp)
+sw $s1 -4($sp)
+lw $s1 -4($sp)
+sw $s1 -44($sp)
+li $s1 10
+sw $s1 -48($sp)
+lw $s1 -44($sp)
+addi $s2 $sp -56
+sw $s1 0($s2)
+lw $s1 -48($sp)
+addi $s2 $sp -60
+sw $s1 0($s2)
+addi $sp $sp -52
+sw $ra 0($sp)
+addi $sp $sp -4
+jal quicksort
+addi $sp $sp 4
+lw $ra 0($sp)
+addi $sp $sp 52
+li $s1 0
+sw $s1 -52($sp)
+lw $s1 -52($sp)
+sw $s1 -0($sp)
+.label13:
+lw $s1 -0($sp)
+sw $s1 -56($sp)
+li $s1 10
+sw $s1 -60($sp)
+lw $s1 -56($sp)
+lw $s2 -60($sp)
+bge $s1 $s2 .label14
+lw $s1 -0($sp)
+sw $s1 -64($sp)
+addi $s1 $s7 0
+lw $s2 -64($sp)
+mul $s2 $s2 4
+addi $s3 $sp -68
+add $s1 $s1 $s2
+lw $s1 0($s1)
+sw $s1 0($s3)
+lw $s1 -68($sp)
+sw $s1 -72($sp)
+lw $s1 -72($sp)
+li $v0 1
+move $a0 $s1
+syscall
+la $a0 .str0
+li $v0 4
+syscall
+lw $s1 -0($sp)
+sw $s1 -76($sp)
+li $s1 1
+sw $s1 -80($sp)
+lw $s1 -76($sp)
+lw $s2 -80($sp)
+add $s3 $s1 $s2
+sw $s3 -76($sp)
+lw $s1 -76($sp)
+sw $s1 -0($sp)
+j .label13
+.label14:

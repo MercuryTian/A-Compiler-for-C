@@ -1,0 +1,170 @@
+global						
+array		int		40		a
+text						
+begin		quicksort				
+int						i
+int						j
+int						val
+int						ttt
+assign		min				.expr1
+=[]		.expr1		.factor0		a
+assign		.factor0				val
+assign		min				.expr2
+assign		.expr2				i
+assign		max				.term3
+assign		1				.term4
+sub		.term3		.term4		.term3
+assign		.term3				j
+assign		max				.term5
+assign		min				.term6
+sub		.term5		.term6		.term5
+assign		.term5				.expr4
+assign		1				.expr5
+let		.expr4		.expr5		.label0
+assign		i				.expr6
+assign		.expr6				ttt
+set		.label1				
+assign		i				.expr7
+assign		j				.expr8
+bet		.expr7		.expr8		.label2
+set		.label3				
+assign		j				.expr9
+assign		i				.expr10
+let		.expr9		.expr10		.label4
+assign		j				.expr12
+=[]		.expr12		.factor13		a
+assign		.factor13				.expr11
+assign		val				.expr13
+bet		.expr11		.expr13		.label5
+assign		i				.expr14
+assign		j				.expr16
+=[]		.expr16		.factor17		a
+assign		.factor17				.expr15
+[]=		.expr14		.expr15		a
+assign		i				.term19
+assign		1				.term20
+add		.term19		.term20		.term19
+assign		.term19				i
+assign		j				.expr18
+assign		.expr18				ttt
+assign		j				.term22
+assign		20				.term23
+sub		.term22		.term23		.term22
+assign		.term22				j
+set		.label5				
+assign		j				.term24
+assign		1				.term25
+sub		.term24		.term25		.term24
+assign		.term24				j
+assign		j				.expr21
+assign		0				.expr22
+lt		.expr21		.expr22		.label6
+assign		j				.expr23
+assign		.expr23				ttt
+set		.label6				
+j		.label3				
+set		.label4				
+assign		ttt				.expr24
+assign		.expr24				j
+set		.label7				
+assign		i				.expr25
+assign		j				.expr26
+bet		.expr25		.expr26		.label8
+assign		i				.expr28
+=[]		.expr28		.factor32		a
+assign		.factor32				.expr27
+assign		val				.expr29
+let		.expr27		.expr29		.label9
+assign		j				.expr30
+assign		i				.expr32
+=[]		.expr32		.factor36		a
+assign		.factor36				.expr31
+[]=		.expr30		.expr31		a
+assign		i				.expr33
+assign		.expr33				ttt
+assign		i				.term39
+assign		20				.term40
+add		.term39		.term40		.term39
+assign		.term39				i
+set		.label9				
+assign		i				.term41
+assign		1				.term42
+add		.term41		.term42		.term41
+assign		.term41				i
+assign		i				.expr36
+assign		10				.expr37
+bet		.expr36		.expr37		.label10
+assign		i				.expr38
+assign		.expr38				ttt
+set		.label10				
+j		.label7				
+set		.label8				
+assign		ttt				.expr39
+assign		.expr39				i
+j		.label1				
+set		.label2				
+assign		i				.expr40
+assign		val				.expr41
+[]=		.expr40		.expr41		a
+assign		min				.expr42
+push		.expr42				
+assign		i				.expr43
+push		.expr43				
+call		quicksort				
+assign		i				.term51
+assign		1				.term52
+add		.term51		.term52		.term51
+assign		.term51				.expr44
+push		.expr44				
+assign		max				.expr45
+push		.expr45				
+call		quicksort				
+set		.label0				
+return						
+end		quicksort				
+begin		tzx				
+set		main				
+int						i
+int						mm
+int						tnum
+assign		0				.expr46
+assign		.expr46				i
+set		.label11				
+assign		i				.expr47
+assign		10				.expr48
+bet		.expr47		.expr48		.label12
+read		tnum				
+assign		i				.expr49
+assign		tnum				.expr50
+[]=		.expr49		.expr50		a
+assign		i				.term59
+assign		1				.term60
+add		.term59		.term60		.term59
+assign		.term59				i
+j		.label11				
+set		.label12				
+assign		0				.expr52
+assign		.expr52				mm
+assign		mm				.expr53
+push		.expr53				
+assign		10				.expr54
+push		.expr54				
+call		quicksort				
+assign		0				.expr55
+assign		.expr55				i
+set		.label13				
+assign		i				.expr56
+assign		10				.expr57
+bet		.expr56		.expr57		.label14
+assign		i				.expr59
+=[]		.expr59		.factor67		a
+assign		.factor67				.expr58
+write		.expr58		int		
+write		 		.str0		
+assign		i				.term69
+assign		1				.term70
+add		.term69		.term70		.term69
+assign		.term69				i
+j		.label13				
+set		.label14				
+return						

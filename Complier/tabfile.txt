@@ -1,0 +1,12 @@
+name: a	type: 1	size: 10	value: 	functBelong: 	position: 1	address: 0	offset: 0
+name: min	type: 3	size: 0	value: 	functBelong: quicksort	position: 3	address: -1	offset: 0
+name: max	type: 3	size: 0	value: 	functBelong: quicksort	position: 3	address: -1	offset: 4
+name: quicksort	type: 0	size: 0	value: 	functBelong: 	position: -1	address: -1	offset: -1
+name: i	type: 1	size: 0	value: 	functBelong: quicksort	position: 5	address: -1	offset: 8
+name: j	type: 1	size: 0	value: 	functBelong: quicksort	position: 5	address: -1	offset: 12
+name: val	type: 1	size: 0	value: 	functBelong: quicksort	position: 6	address: -1	offset: 16
+name: ttt	type: 1	size: 0	value: 	functBelong: quicksort	position: 6	address: -1	offset: 20
+name: i	type: 1	size: 0	value: 	functBelong: main	position: 51	address: -1	offset: 0
+name: mm	type: 1	size: 0	value: 	functBelong: main	position: 51	address: -1	offset: 4
+name: tnum	type: 1	size: 0	value: 	functBelong: main	position: 51	address: -1	offset: 8
+name: main	type: 5	size: 0	value: 	functBelong: 	position: -1	address: -1	offset: -1
